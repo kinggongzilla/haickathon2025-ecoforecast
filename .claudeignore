@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Distribution / packaging
+.egg-info/
+dist/
+build/
+
+# Frontend
+/home/david/HAICKATHON/frontend/eco-forecast/node_modules

@@ -1,6 +1,6 @@
-EcoForecast AI
+# EcoForecast AI
 
-Smart Energy Forecasting for Sustainable Buildings
+## Smart Energy Forecasting for Sustainable Buildings
 
 Predict your building's electricity consumption 12 months ahead with AI-powered accuracy and get personalized recommendations to reduce energy costs.
 What It Does
@@ -13,7 +13,9 @@ What It Does
 
     Interactive Dashboard: Clean visualizations of consumption trends
 
-Tech Stack
+[Blog Article](https://medium.com/@codingsimon/ecoforecast-ai-revolutionizing-energy-management-for-a-sustainable-future-4e87e3c5f94e)
+
+# Tech Stack
 
 Frontend: Next.js 14, TypeScript, Tailwind CSS
 Backend: Python, Chronos Foundation Models, FastAPI

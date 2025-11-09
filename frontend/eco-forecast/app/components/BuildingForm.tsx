@@ -18,6 +18,21 @@ interface BuildingFormProps {
   isLoading: boolean;
 }
 
+// State mapping: code -> full name
+const STATE_LABELS: { [key: string]: string } = {
+  "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+  "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
+  "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+  "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+  "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+  "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+  "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+  "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+  "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+  "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia",
+  "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming"
+};
+
 const STATES = [
   "AL", "FL", "TX", "TN", "AR", "MT", "ID", "PA", "IL", "CA", "OH", "NE", "UT", "OK",
   "NY", "MA", "MD", "VA", "NC", "MN", "WI", "GA", "MS", "NJ", "KS", "OR", "DC", "DE",
@@ -43,35 +58,37 @@ const HEATING_FUELS = [
   "Natural Gas", "Electricity", "Fuel Oil", "Propane", "Wood", "Other Fuel"
 ];
 
-const WINDOWS = [
-  "Single, Clear, Metal",
-  "Single, Clear, Non-metal",
-  "Single, Clear, Metal, Exterior Clear Storm",
-  "Single, Clear, Non-metal, Exterior Clear Storm",
-  "Double, Clear, Metal, Air",
-  "Double, Clear, Non-metal, Air",
-  "Double, Clear, Metal, Air, Exterior Clear Storm",
-  "Double, Clear, Non-metal, Air, Exterior Clear Storm",
-  "Double, Low-E, Non-metal, Air, M-Gain",
-  "Triple, Low-E, Non-metal, Air, L-Gain"
-];
+// Window options with user-friendly labels
+const WINDOWS: { [key: string]: string } = {
+  "Single, Clear, Metal": "Single-Pane, Metal Frame",
+  "Single, Clear, Non-metal": "Single-Pane, Wood/Vinyl Frame",
+  "Single, Clear, Metal, Exterior Clear Storm": "Single-Pane, Metal Frame with Storm Window",
+  "Single, Clear, Non-metal, Exterior Clear Storm": "Single-Pane, Wood/Vinyl Frame with Storm Window",
+  "Double, Clear, Metal, Air": "Double-Pane, Metal Frame",
+  "Double, Clear, Non-metal, Air": "Double-Pane, Wood/Vinyl Frame",
+  "Double, Clear, Metal, Air, Exterior Clear Storm": "Double-Pane, Metal Frame with Storm Window",
+  "Double, Clear, Non-metal, Air, Exterior Clear Storm": "Double-Pane, Wood/Vinyl Frame with Storm Window",
+  "Double, Low-E, Non-metal, Air, M-Gain": "Double-Pane, Low-E Coating (Medium-Gain)",
+  "Triple, Low-E, Non-metal, Air, L-Gain": "Triple-Pane, Low-E Coating (Low-Gain)"
+};
 
-const INSULATION_WALL = [
-  "Wood Stud, Uninsulated",
-  "Wood Stud, R-7",
-  "Wood Stud, R-11",
-  "Wood Stud, R-15",
-  "Wood Stud, R-19",
-  "Brick, 12-in, 3-wythe, Uninsulated",
-  "Brick, 12-in, 3-wythe, R-7",
-  "Brick, 12-in, 3-wythe, R-11",
-  "Brick, 12-in, 3-wythe, R-15",
-  "Brick, 12-in, 3-wythe, R-19",
-  "CMU, 6-in Hollow, Uninsulated",
-  "CMU, 6-in Hollow, R-7",
-  "CMU, 6-in Hollow, R-11",
-  "CMU, 6-in Hollow, R-19"
-];
+// Wall insulation options with user-friendly labels
+const INSULATION_WALL: { [key: string]: string } = {
+  "Wood Stud, Uninsulated": "Wood Frame - No Insulation",
+  "Wood Stud, R-7": "Wood Frame - R-7 Insulation (Minimal)",
+  "Wood Stud, R-11": "Wood Frame - R-11 Insulation (Basic)",
+  "Wood Stud, R-15": "Wood Frame - R-15 Insulation (Good)",
+  "Wood Stud, R-19": "Wood Frame - R-19 Insulation (Better)",
+  "Brick, 12-in, 3-wythe, Uninsulated": "Brick Wall - No Insulation",
+  "Brick, 12-in, 3-wythe, R-7": "Brick Wall - R-7 Insulation (Minimal)",
+  "Brick, 12-in, 3-wythe, R-11": "Brick Wall - R-11 Insulation (Basic)",
+  "Brick, 12-in, 3-wythe, R-15": "Brick Wall - R-15 Insulation (Good)",
+  "Brick, 12-in, 3-wythe, R-19": "Brick Wall - R-19 Insulation (Better)",
+  "CMU, 6-in Hollow, Uninsulated": "Concrete Block - No Insulation",
+  "CMU, 6-in Hollow, R-7": "Concrete Block - R-7 Insulation (Minimal)",
+  "CMU, 6-in Hollow, R-11": "Concrete Block - R-11 Insulation (Basic)",
+  "CMU, 6-in Hollow, R-19": "Concrete Block - R-19 Insulation (Good)"
+};
 
 export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps) {
   const [formData, setFormData] = useState<BuildingFormData>({
@@ -114,7 +131,7 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
           >
             <option value="">Select a state</option>
             {STATES.map(state => (
-              <option key={state} value={state}>{state}</option>
+              <option key={state} value={state}>{STATE_LABELS[state]}</option>
             ))}
           </select>
         </div>
@@ -207,8 +224,8 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select window type</option>
-            {WINDOWS.map(window => (
-              <option key={window} value={window}>{window}</option>
+            {Object.entries(WINDOWS).map(([value, label]) => (
+              <option key={value} value={value}>{label}</option>
             ))}
           </select>
         </div>
@@ -223,8 +240,8 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select wall insulation</option>
-            {INSULATION_WALL.map(insulation => (
-              <option key={insulation} value={insulation}>{insulation}</option>
+            {Object.entries(INSULATION_WALL).map(([value, label]) => (
+              <option key={value} value={value}>{label}</option>
             ))}
           </select>
         </div>

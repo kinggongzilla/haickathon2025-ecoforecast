@@ -16,7 +16,14 @@ print(f"Loading .env from: {env_path}")
 print(f".env exists: {os.path.exists(env_path)}")
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Enable CORS for all routes with permissive settings for ngrok
+CORS(app, resources={r"/*": {
+    "origins": "*",
+    "methods": ["GET", "POST", "OPTIONS"],
+    "allow_headers": ["Content-Type", "Authorization"],
+    "expose_headers": ["Content-Type"],
+    "supports_credentials": True
+}})
 
 # Load the model once when the server starts
 print("Loading Chronos2 model...")

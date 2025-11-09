@@ -43,8 +43,13 @@ export default function PredictionChart({ predictions, energyAdvice }: Predictio
       const futureDate = new Date(currentDate);
       futureDate.setDate(currentDate.getDate() + (i / pointsPerDay) + 1);
 
+      // Format as "Month YY" (e.g., "Nov 25", "Dec 25", "Jan 26")
+      const month = futureDate.toLocaleDateString('en-US', { month: 'short' });
+      const year = futureDate.getFullYear().toString().slice(-2); // Last 2 digits of year
+      const formattedDate = `${month} ${year}`;
+
       dailyData.push({
-        name: futureDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        name: formattedDate,
         date: futureDate,
         'Lower Bound (25%)': avg25,
         'Median (50%)': avg50,
@@ -127,25 +132,98 @@ export default function PredictionChart({ predictions, energyAdvice }: Predictio
         </LineChart>
       </ResponsiveContainer>
 
-      <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950 rounded-md">
-        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+      {/* Energy Saving Recommendations as Cards */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-6">
           {energyAdvice && energyAdvice.length > 0 ? 'Personalized Energy Saving Recommendations' : 'Energy Saving Tips'}
         </h3>
-        <ul className="list-disc list-inside text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {energyAdvice && energyAdvice.length > 0 ? (
-            energyAdvice.map((tip, index) => (
-              <li key={index}>{tip}</li>
-            ))
+            energyAdvice.map((tip, index) => {
+              // Choose icon based on card index
+              const icons = [
+                // Icon 1: Light bulb (energy/efficiency)
+                <svg key="icon1" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>,
+                // Icon 2: Fire (heating/temperature)
+                <svg key="icon2" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>,
+                // Icon 3: Home (building/structure)
+                <svg key="icon3" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              ];
+
+              return (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border border-blue-200 dark:border-blue-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-500 dark:bg-blue-600 rounded-full flex items-center justify-center text-white">
+                      {icons[index]}
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+                        {tip}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
           ) : (
+            // Fallback cards
             <>
-              <li>Upgrade to energy-efficient LED lighting</li>
-              <li>Install a programmable thermostat to optimize heating/cooling</li>
-              <li>Improve insulation and seal air leaks</li>
-              <li>Consider upgrading to ENERGY STAR certified appliances</li>
-              <li>Use natural ventilation when possible to reduce AC usage</li>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border border-blue-200 dark:border-blue-800 rounded-lg p-6 shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-500 dark:bg-blue-600 rounded-full flex items-center justify-center text-white">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+                      Upgrade to energy-efficient LED lighting to reduce electricity consumption by up to 75%
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border border-blue-200 dark:border-blue-800 rounded-lg p-6 shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-500 dark:bg-blue-600 rounded-full flex items-center justify-center text-white">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+                      Install a programmable thermostat to optimize heating and cooling schedules
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border border-blue-200 dark:border-blue-800 rounded-lg p-6 shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-500 dark:bg-blue-600 rounded-full flex items-center justify-center text-white">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+                      Improve insulation and seal air leaks to reduce heating and cooling costs by up to 20%
+                    </p>
+                  </div>
+                </div>
+              </div>
             </>
           )}
-        </ul>
+        </div>
       </div>
     </div>
   );

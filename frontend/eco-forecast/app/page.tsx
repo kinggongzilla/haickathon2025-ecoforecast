@@ -8,7 +8,7 @@ interface BuildingFormData {
   'in.state': string;
   'in.sqft..ft2': number;
   'in.bedrooms'?: number;
-  'in.vintage'?: string;
+  'in.vintage'?: number;
   'in.geometry_building_type_recs'?: string;
   'in.heating_fuel'?: string;
   'in.windows'?: string;
@@ -17,6 +17,7 @@ interface BuildingFormData {
 
 export default function Home() {
   const [predictions, setPredictions] = useState<any[]>([]);
+  const [energyAdvice, setEnergyAdvice] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
@@ -56,6 +57,7 @@ export default function Home() {
 
       if (data.status === 'success') {
         setPredictions(data.predictions);
+        setEnergyAdvice(data.energy_advice || []);
         setShowResults(true);
       } else {
         throw new Error(data.message || 'Failed to generate predictions');
@@ -71,6 +73,7 @@ export default function Home() {
   const handleBack = () => {
     setShowResults(false);
     setPredictions([]);
+    setEnergyAdvice([]);
     setError(null);
   };
 
@@ -126,7 +129,7 @@ export default function Home() {
 
             {/* Predictions Chart */}
             {predictions.length > 0 && (
-              <PredictionChart predictions={predictions} />
+              <PredictionChart predictions={predictions} energyAdvice={energyAdvice} />
             )}
           </>
         )}

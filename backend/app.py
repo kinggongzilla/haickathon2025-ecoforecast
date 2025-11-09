@@ -3,6 +3,17 @@ from flask_cors import CORS
 import pandas as pd
 from chronos import Chronos2Pipeline
 from inference import make_prediction
+from energy_advisor import generate_energy_advice
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file in project root
+# Get the directory of this file, then go up one level to project root
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env_path = os.path.join(project_root, '.env')
+load_dotenv(env_path)
+print(f"Loading .env from: {env_path}")
+print(f".env exists: {os.path.exists(env_path)}")
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -70,6 +81,10 @@ def building_data():
             clothes_washer=clothes_washer
         )
         
+        # Generate personalized energy-saving advice
+        building_params = data.copy()  # Pass all building parameters
+        energy_advice = generate_energy_advice(building_params)
+
         # Convert predictions to JSON-serializable format
         result = {
             'status': 'success',
@@ -87,9 +102,10 @@ def building_data():
                 'refrigerator': refrigerator,
                 'clothes_washer': clothes_washer
             },
-            'predictions': pred_df.to_dict(orient='records')
+            'predictions': pred_df.to_dict(orient='records'),
+            'energy_advice': energy_advice
         }
-        
+
         return jsonify(result), 200
         
     except ValueError as ve:

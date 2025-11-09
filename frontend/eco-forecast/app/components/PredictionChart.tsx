@@ -12,9 +12,10 @@ interface PredictionData {
 
 interface PredictionChartProps {
   predictions: PredictionData[];
+  energyAdvice?: string[];
 }
 
-export default function PredictionChart({ predictions }: PredictionChartProps) {
+export default function PredictionChart({ predictions, energyAdvice }: PredictionChartProps) {
   if (!predictions || predictions.length === 0) {
     return null;
   }
@@ -89,7 +90,7 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
             height={80}
           />
           <YAxis
-            label={{ value: 'kWh', angle: -90, position: 'insideLeft' }}
+            label={{ value: 'kWh / day', angle: -90, position: 'insideLeft' }}
             tick={{ fill: 'currentColor' }}
           />
           <Tooltip
@@ -127,13 +128,23 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
       </ResponsiveContainer>
 
       <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950 rounded-md">
-        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">Energy Saving Tips</h3>
+        <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+          {energyAdvice && energyAdvice.length > 0 ? 'Personalized Energy Saving Recommendations' : 'Energy Saving Tips'}
+        </h3>
         <ul className="list-disc list-inside text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
-          <li>Upgrade to energy-efficient LED lighting</li>
-          <li>Install a programmable thermostat to optimize heating/cooling</li>
-          <li>Improve insulation and seal air leaks</li>
-          <li>Consider upgrading to ENERGY STAR certified appliances</li>
-          <li>Use natural ventilation when possible to reduce AC usage</li>
+          {energyAdvice && energyAdvice.length > 0 ? (
+            energyAdvice.map((tip, index) => (
+              <li key={index}>{tip}</li>
+            ))
+          ) : (
+            <>
+              <li>Upgrade to energy-efficient LED lighting</li>
+              <li>Install a programmable thermostat to optimize heating/cooling</li>
+              <li>Improve insulation and seal air leaks</li>
+              <li>Consider upgrading to ENERGY STAR certified appliances</li>
+              <li>Use natural ventilation when possible to reduce AC usage</li>
+            </>
+          )}
         </ul>
       </div>
     </div>

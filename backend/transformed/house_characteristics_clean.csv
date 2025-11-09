@@ -1,0 +1,511 @@
+bldg_id;in.county_name;in.state;in.bedrooms;in.vintage;in.geometry_building_type_recs;in.heating_fuel;in.cooling_setpoint;in.windows;in.insulation_wall;in.refrigerator;in.clothes_washer;in.sqft..ft2
+1;Franklin County;AL;4;1990;Mobile Home;Propane;75F;Single, Clear, Metal;Wood Stud, R-15;EF 15.9;Standard;1228.0
+10;Miami-Dade County;FL;3;1940;Mobile Home;Electricity;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+100;Harris County;TX;3;1940;Single-Family Detached;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;1228.0
+1000;Monroe County;TN;3;2000;Single-Family Detached;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;2179.0
+1001;Pasco County;FL;4;2000;Single-Family Detached;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, R-19;EF 19.9;Standard;2179.0
+1002;Baxter County;AR;4;1980;Single-Family Detached;Wood;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;2678.0
+1003;Missoula County;MT;5;1990;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal;Wood Stud, R-11;EF 19.9;Standard;2678.0
+1008;Greene County;AR;5;2010;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;3310.0
+1015;Twin Falls County;ID;1;1970;Multi-Family with 5+ Units;Electricity;70F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 15.9;Standard;623.0
+10000;Philadelphia County;PA;3;1960;Single-Family Attached;Natural Gas;68F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;1207.0
+10001;Kane County;IL;4;1980;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;2179.0
+10002;Los Angeles County;CA;2;1970;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;;854.0
+10003;Morgan County;OH;2;2000;Single-Family Detached;Electricity;68F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;Standard;1228.0
+10004;Duval County;FL;5;2000;Single-Family Detached;Electricity;75F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, R-11;EF 19.9;Standard;1698.0
+10005;Morgan County;TN;3;1990;Mobile Home;Electricity;67F;Double, Clear, Non-metal, Air;Wood Stud, R-15;EF 19.9;EnergyStar;1228.0
+10006;Sarpy County;NE;2;1970;Multi-Family with 5+ Units;Electricity;68F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;1138.0
+10007;Iron County;UT;3;1960;Single-Family Detached;Natural Gas;62F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;EnergyStar;5587.0
+10008;Oklahoma County;OK;1;1960;Single-Family Detached;Natural Gas;80F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 21.9;Standard;298.0
+10009;Bronx County;NY;2;1980;Multi-Family with 2 - 4 Units;Natural Gas;75F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-11;EF 17.6;;1138.0
+10010;Essex County;MA;5;1990;Single-Family Detached;Natural Gas;76F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-19;EF 17.6;Standard;3310.0
+10013;Cuyahoga County;OH;1;1980;Multi-Family with 5+ Units;Electricity;70F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-11;EF 17.6;;623.0
+10014;Washington County;MD;4;1990;Single-Family Detached;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;3310.0
+10015;Middlesex County;VA;4;1940;Single-Family Detached;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;2678.0
+10016;Nassau County;NY;4;1940;Single-Family Detached;Fuel Oil;72F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;Standard;1228.0
+10017;Brunswick County;NC;2;1970;Mobile Home;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 15.9;EnergyStar;1228.0
+10018;Polk County;AR;3;1940;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;2179.0
+10020;Scott County;MN;4;1990;Single-Family Detached;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;Standard;3310.0
+10021;Dane County;WI;2;2000;Multi-Family with 5+ Units;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 17.6;;623.0
+10022;Scioto County;OH;4;1960;Single-Family Detached;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;881.0
+10023;Fulton County;GA;2;1970;Multi-Family with 2 - 4 Units;Natural Gas;68F;Single, Clear, Metal;Wood Stud, R-7;EF 19.9;;854.0
+10024;Rankin County;MS;3;1980;Mobile Home;Propane;78F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;Standard;1698.0
+10025;Calhoun County;AL;4;1950;Single-Family Detached;Natural Gas;67F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;Standard;1228.0
+10027;Mercer County;NJ;2;1980;Single-Family Attached;Natural Gas;72F;Single, Clear, Non-metal;Wood Stud, R-11;EF 21.9;Standard;1678.0
+10031;Sedgwick County;KS;4;2000;Single-Family Detached;Natural Gas;68F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;2678.0
+10043;Deschutes County;OR;4;1970;Single-Family Detached;Electricity;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 21.9;EnergyStar;1228.0
+10045;Le Flore County;OK;1;1980;Multi-Family with 2 - 4 Units;Electricity;60F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;Standard;322.0
+10047;Yamhill County;OR;2;1940;Single-Family Detached;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+10057;Hood River County;OR;2;1980;Single-Family Detached;Electricity;76F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 15.9;Standard;881.0
+10071;Warren County;MS;3;1980;Single-Family Detached;Propane;70F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;Standard;1228.0
+10085;District of Columbia;DC;2;2000;Multi-Family with 5+ Units;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, R-11;EF 19.9;EnergyStar;1138.0
+10118;New Castle County;DE;2;1940;Single-Family Detached;Natural Gas;78F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;EnergyStar;298.0
+10132;Sandoval County;NM;3;1980;Mobile Home;Natural Gas;75F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-11;EF 19.9;Standard;1698.0
+10142;Jefferson County;ID;1;1980;Multi-Family with 2 - 4 Units;Electricity;60F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;;623.0
+10144;Providence County;RI;1;1980;Multi-Family with 5+ Units;Fuel Oil;70F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;;854.0
+10213;Laramie County;WY;3;1940;Single-Family Detached;Natural Gas;62F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1698.0
+10410;Rutland County;VT;3;1940;Multi-Family with 2 - 4 Units;Propane;76F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 15.9;;1138.0
+10481;Carbon County;WY;4;1950;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;EnergyStar;2179.0
+100000;Ocean County;NJ;2;1980;Single-Family Detached;Electricity;72F;Single, Clear, Non-metal;Wood Stud, R-11;EF 19.9;EnergyStar;1228.0
+100001;Iberia Parish;LA;3;1940;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;Standard;1228.0
+100002;Washington County;MN;3;1970;Single-Family Detached;Natural Gas;68F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;Standard;1228.0
+100003;St. Clair County;IL;3;1950;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 10.5;EnergyStar;1228.0
+100004;San Mateo County;CA;2;1970;Multi-Family with 5+ Units;Electricity;72F;Single, Clear, Metal;Wood Stud, R-7;EF 17.6;;1138.0
+100005;Cook County;IL;4;1990;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;2678.0
+100006;Bexar County;TX;1;1970;Multi-Family with 5+ Units;Natural Gas;70F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;;623.0
+100007;Lucas County;OH;1;1960;Multi-Family with 5+ Units;Electricity;67F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;322.0
+100008;Orange County;TX;3;1970;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-7;EF 17.6;EnergyStar;1228.0
+100009;Overton County;TN;3;1940;Single-Family Detached;Electricity;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;1228.0
+100010;Fulton County;GA;3;2000;Multi-Family with 5+ Units;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;1138.0
+100011;Montgomery County;KS;2;1970;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;854.0
+100012;Belmont County;OH;4;2000;Single-Family Detached;Propane;75F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 15.9;Standard;2179.0
+100013;Shelby County;TN;3;2000;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;1698.0
+100014;Pitkin County;CO;1;1980;Multi-Family with 5+ Units;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;Standard;623.0
+100015;Loudoun County;VA;3;1980;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;2179.0
+100016;Manatee County;FL;5;2000;Single-Family Detached;Electricity;75F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-11;EF 19.9;EnergyStar;2179.0
+100017;Westchester County;NY;1;1960;Multi-Family with 2 - 4 Units;Natural Gas;70F;Single, Clear, Metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;623.0
+100018;Bergen County;NJ;5;1950;Single-Family Detached;Natural Gas;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 15.9;EnergyStar;5587.0
+100019;Bergen County;NJ;2;1970;Multi-Family with 5+ Units;Natural Gas;75F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, R-7;EF 17.6;;854.0
+100020;Santa Cruz County;CA;3;1960;Single-Family Detached;Natural Gas;68F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;Standard;881.0
+100021;Gwinnett County;GA;3;1980;Mobile Home;Electricity;70F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;;1228.0
+100022;Grant County;WI;3;1990;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;2179.0
+100023;Amador County;CA;3;1990;Multi-Family with 2 - 4 Units;Propane;68F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;;1138.0
+100024;Broward County;FL;3;2000;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;Standard;1682.0
+100025;Harris County;TX;3;1940;Single-Family Detached;Electricity;67F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;2179.0
+100026;Pushmataha County;OK;3;1940;Mobile Home;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100027;Baldwin County;AL;3;1950;Single-Family Detached;Electricity;76F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;Standard;2179.0
+100028;Allamakee County;IA;1;1940;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Non-metal;Wood Stud, R-7;EF 19.9;;322.0
+100029;El Paso County;CO;2;2010;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;1228.0
+100030;San Bernardino County;CA;1;1990;Multi-Family with 5+ Units;Natural Gas;68F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, R-19;EF 19.9;;623.0
+100031;Weld County;CO;3;1980;Single-Family Detached;Natural Gas;68F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;Standard;1698.0
+100032;Washington County;IL;2;1970;Multi-Family with 5+ Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-7;EF 17.6;;854.0
+100033;Clark County;NV;3;2000;Single-Family Detached;Natural Gas;75F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;1698.0
+100034;Wake County;NC;3;1990;Single-Family Attached;Natural Gas;67F;Single, Clear, Metal;Wood Stud, R-19;EF 19.9;EnergyStar;2663.0
+100035;Butler County;MO;3;2000;Single-Family Detached;Propane;75F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;Standard;1698.0
+100036;Robeson County;NC;3;1970;Single-Family Detached;Electricity;72F;Single, Clear, Metal;Brick, 12-in, 3-wythe, Uninsulated;EF 21.9;Standard;1228.0
+100037;Fentress County;TN;2;2010;Single-Family Detached;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;1228.0
+100038;Putnam County;TN;3;1960;Single-Family Detached;Natural Gas;68F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 21.9;Standard;1228.0
+100039;Deaf Smith County;TX;3;2000;Single-Family Detached;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-11;EF 21.9;EnergyStar;1228.0
+100040;Richland County;SC;1;1990;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-11;EF 17.6;;298.0
+100041;Ellis County;KS;2;1940;Single-Family Detached;Propane;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 15.9;Standard;1228.0
+100042;Lehigh County;PA;2;1970;Single-Family Attached;Fuel Oil;75F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-7;EF 17.6;EnergyStar;1207.0
+100043;Worcester County;MA;2;1960;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+100044;Louisa County;VA;2;1990;Single-Family Detached;Electricity;70F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;Standard;1698.0
+100045;Jones County;MS;4;1950;Single-Family Detached;Propane;70F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 21.9;EnergyStar;881.0
+100046;Nueces County;TX;1;2010;Single-Family Attached;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;872.0
+100047;Carteret County;NC;3;1960;Single-Family Detached;Propane;70F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;EnergyStar;2678.0
+100048;East Baton Rouge Parish;LA;3;1970;Single-Family Detached;Natural Gas;65F;Single, Clear, Metal;Wood Stud, R-7;EF 19.9;EnergyStar;2179.0
+100049;Hardin County;IA;4;1970;Single-Family Detached;Propane;75F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;EnergyStar;3310.0
+100050;Tarrant County;TX;3;1970;Single-Family Detached;Electricity;70F;Single, Clear, Non-metal;Wood Stud, R-7;EF 17.6;EnergyStar;1228.0
+100051;Prince William County;VA;3;2000;Multi-Family with 5+ Units;Natural Gas;75F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-19;EF 17.6;EnergyStar;2648.0
+100052;Jefferson County;CO;1;1950;Multi-Family with 5+ Units;Electricity;68F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;Standard;322.0
+100053;Chisago County;MN;4;1970;Single-Family Detached;Natural Gas;80F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 19.9;Standard;1698.0
+100054;Hudson County;NJ;1;1970;Multi-Family with 5+ Units;Natural Gas;68F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;;322.0
+100055;New York County;NY;1;1940;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;854.0
+100056;Wake County;NC;4;2000;Single-Family Attached;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;1678.0
+100057;Sacramento County;CA;3;1960;Single-Family Detached;Natural Gas;80F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;2678.0
+100058;Cass County;MO;3;1940;Single-Family Detached;Propane;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;Standard;2179.0
+100059;Lincoln County;NM;3;1970;Single-Family Detached;Electricity;60F;Single, Clear, Metal;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;Standard;1228.0
+100060;Alameda County;CA;2;2000;Multi-Family with 5+ Units;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;Standard;1138.0
+100061;Rutherford County;TN;1;2010;Multi-Family with 5+ Units;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;854.0
+100062;Erie County;PA;2;1940;Multi-Family with 2 - 4 Units;Natural Gas;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;;623.0
+100063;Morris County;NJ;4;1950;Single-Family Detached;Natural Gas;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1698.0
+100064;Manitowoc County;WI;3;1940;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 10.5;EnergyStar;2179.0
+100065;Maricopa County;AZ;3;1940;Single-Family Detached;Electricity;68F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;2179.0
+100066;Hennepin County;MN;3;2000;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;Standard;1228.0
+100067;Stutsman County;ND;3;1950;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 19.9;Standard;1228.0
+100068;Mecklenburg County;NC;2;1950;Multi-Family with 2 - 4 Units;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;;854.0
+100069;Maricopa County;AZ;1;1990;Multi-Family with 5+ Units;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;1138.0
+100070;Baltimore city;MD;4;1940;Single-Family Attached;Natural Gas;72F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 15.9;Standard;2663.0
+100071;Charleston County;SC;5;2010;Single-Family Detached;Natural Gas;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;2678.0
+100072;Hall County;GA;3;2000;Single-Family Detached;Electricity;68F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-11;EF 21.9;EnergyStar;1698.0
+100073;Hartford County;CT;2;1950;Single-Family Detached;Fuel Oil;78F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, Uninsulated;EF 19.9;EnergyStar;1698.0
+100074;Forest County;PA;3;1940;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal, Exterior Clear Storm;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;Standard;634.0
+100075;Volusia County;FL;4;1960;Single-Family Detached;Fuel Oil;76F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100076;Fairfield County;CT;1;1960;Multi-Family with 5+ Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;;854.0
+100077;Delaware County;IN;4;1950;Single-Family Detached;Electricity;70F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+100078;Milwaukee County;WI;2;1940;Multi-Family with 5+ Units;Natural Gas;75F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 17.6;;1138.0
+100079;Ashland County;OH;3;1980;Single-Family Detached;Wood;75F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;5587.0
+100080;Dickinson County;IA;1;2000;Multi-Family with 5+ Units;Natural Gas;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;1138.0
+100081;Brown County;MN;3;1940;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;1228.0
+100082;Lee County;FL;3;2000;Single-Family Detached;Electricity;75F;Double, Clear, Metal, Air;CMU, 6-in Hollow, R-11;EF 17.6;Standard;2179.0
+100083;Los Angeles County;CA;2;1970;Multi-Family with 5+ Units;Electricity;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;;854.0
+100084;Henderson County;TX;3;1980;Single-Family Detached;Electricity;80F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, R-11;EF 10.5;Standard;1228.0
+100085;Kings County;NY;1;1960;Multi-Family with 5+ Units;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;;623.0
+100086;Jasper County;MO;4;1990;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;5587.0
+100087;Crawford County;IL;5;1970;Single-Family Detached;Electricity;70F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-7;EF 21.9;Standard;1698.0
+100088;Alameda County;CA;3;1950;Single-Family Detached;Electricity;60F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 6.7;Standard;634.0
+100089;Crawford County;AR;3;1970;Multi-Family with 2 - 4 Units;Natural Gas;65F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, R-7;EF 17.6;Standard;1138.0
+100090;Navajo County;AZ;3;1990;Single-Family Detached;Natural Gas;68F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;EnergyStar;881.0
+100091;Salt Lake County;UT;2;1990;Multi-Family with 5+ Units;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 17.6;Standard;854.0
+100092;Prince George's County;MD;3;1990;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;1698.0
+100093;Nassau County;NY;3;1940;Multi-Family with 2 - 4 Units;Natural Gas;72F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;;854.0
+100094;Porter County;IN;3;1990;Single-Family Detached;Natural Gas;78F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-15;EF 19.9;EnergyStar;1698.0
+100095;Williams County;ND;1;2010;Multi-Family with 5+ Units;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;322.0
+100096;Orange County;CA;2;1950;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100097;Monroe County;PA;4;1990;Single-Family Detached;;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;1698.0
+100098;Hillsborough County;FL;1;2000;Multi-Family with 5+ Units;Electricity;70F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-11;EF 17.6;EnergyStar;854.0
+100099;Latah County;ID;2;1970;Multi-Family with 5+ Units;Electricity;70F;Single, Clear, Metal;Wood Stud, R-7;EF 19.9;Standard;322.0
+100100;Oklahoma County;OK;3;1950;Single-Family Detached;Natural Gas;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+100101;Hall County;TX;3;1950;Single-Family Detached;Natural Gas;80F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100102;Matanuska-Susitna Borough;AK;3;1960;Single-Family Detached;Natural Gas;68F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-15;EF 19.9;Standard;1228.0
+100103;Lee County;TX;3;1940;Single-Family Detached;Natural Gas;78F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100104;DeSoto County;MS;3;1980;Single-Family Detached;Natural Gas;75F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;EnergyStar;1228.0
+100105;Trumbull County;OH;3;1960;Single-Family Detached;Natural Gas;76F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100106;Macomb County;MI;4;1990;Single-Family Attached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 15.9;EnergyStar;3228.0
+100107;Marathon County;WI;2;1990;Multi-Family with 5+ Units;Electricity;72F;Single, Clear, Metal;Wood Stud, R-19;EF 17.6;;854.0
+100108;Walker County;AL;3;1940;Single-Family Detached;Natural Gas;65F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;;Standard;1698.0
+100109;Montgomery County;NC;2;1980;Mobile Home;Electricity;75F;Single, Clear, Metal;Wood Stud, R-11;EF 6.7;EnergyStar;881.0
+100111;Suffolk County;NY;1;2000;Multi-Family with 5+ Units;Natural Gas;68F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;;854.0
+100112;Pottawatomie County;OK;4;1980;Single-Family Detached;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;5587.0
+100113;Hancock County;TN;3;1940;Single-Family Detached;Electricity;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100114;Lee County;NC;4;1990;Mobile Home;Electricity;75F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;1228.0
+100115;Macomb County;MI;4;1960;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;Standard;2179.0
+100117;Broward County;FL;2;2010;Multi-Family with 5+ Units;Electricity;76F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-19;EF 17.6;Standard;854.0
+100119;Denver County;CO;3;1950;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;EnergyStar;1698.0
+100120;Jackson County;MO;3;1960;Single-Family Detached;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;EnergyStar;2678.0
+100121;Knox County;TN;3;1960;Single-Family Detached;Natural Gas;68F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;Standard;1228.0
+100123;Mecklenburg County;NC;3;2000;Single-Family Detached;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 15.9;EnergyStar;1698.0
+100124;Volusia County;FL;3;1970;Single-Family Detached;Electricity;75F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, R-7;EF 21.9;Standard;2678.0
+100125;Yakima County;WA;2;1990;Single-Family Detached;Wood;70F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 21.9;EnergyStar;1698.0
+100126;Lincoln County;OR;2;1990;Multi-Family with 5+ Units;Electricity;70F;Single, Clear, Metal;Wood Stud, R-19;EF 19.9;;854.0
+100127;Oconee County;GA;5;1970;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal;Wood Stud, R-7;EF 21.9;Standard;5587.0
+100128;Prince William County;VA;3;1960;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1698.0
+100129;Cook County;IL;4;1990;Single-Family Detached;Natural Gas;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 17.6;Standard;1698.0
+100130;Rankin County;MS;4;1990;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;3310.0
+100131;New York County;NY;2;1960;Multi-Family with 5+ Units;Natural Gas;68F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;;1138.0
+100132;Colquitt County;GA;2;1940;Multi-Family with 2 - 4 Units;Electricity;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;;1138.0
+100133;New Castle County;DE;2;1940;Multi-Family with 2 - 4 Units;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;Standard;1138.0
+100136;Sioux County;IA;2;1940;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-7;;Standard;1228.0
+100137;Cooper County;MO;2;1950;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;Standard;298.0
+100139;Brown County;WI;4;1970;Single-Family Detached;Natural Gas;72F;Single, Clear, Non-metal;Wood Stud, R-15;EF 17.6;EnergyStar;3310.0
+100140;Lancaster County;NE;1;1990;Single-Family Attached;Electricity;70F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;Standard;1207.0
+100141;Montgomery County;MD;2;2010;Multi-Family with 5+ Units;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;1138.0
+100142;Gwinnett County;GA;4;1960;Single-Family Detached;Natural Gas;67F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 21.9;Standard;1228.0
+100144;Gwinnett County;GA;1;1990;Multi-Family with 5+ Units;Electricity;68F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 17.6;EnergyStar;623.0
+100146;Wayne County;IL;2;2010;Single-Family Detached;Propane;68F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-15;EF 19.9;EnergyStar;1228.0
+100147;Durham County;NC;2;1970;Multi-Family with 2 - 4 Units;Natural Gas;72F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, R-7;EF 19.9;;854.0
+100150;Salt Lake County;UT;4;1940;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 15.9;Standard;2678.0
+100152;Franklin County;OH;2;1970;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-7;EF 17.6;EnergyStar;1228.0
+100153;Jackson County;MS;2;1970;Single-Family Detached;Electricity;76F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 15.9;EnergyStar;2179.0
+100155;Gwinnett County;GA;1;1970;Multi-Family with 2 - 4 Units;Natural Gas;70F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;;854.0
+100157;Douglas County;MN;3;2010;Single-Family Detached;Propane;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;1698.0
+100158;Middlesex County;MA;1;1980;Multi-Family with 5+ Units;Natural Gas;72F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;;322.0
+100159;Jefferson County;KY;3;1950;Single-Family Detached;Natural Gas;70F;Double, Clear, Metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100160;Pulaski County;MO;3;1990;Mobile Home;Electricity;70F;Single, Clear, Non-metal;Wood Stud, R-15;EF 19.9;Standard;634.0
+100162;Cheshire County;NH;3;1960;Single-Family Detached;Fuel Oil;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+100163;Bronx County;NY;1;1940;Multi-Family with 5+ Units;Fuel Oil;75F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;EnergyStar;623.0
+100165;Norfolk city;VA;4;1950;Single-Family Detached;Electricity;65F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;3310.0
+100168;Danville city;VA;3;1940;Single-Family Detached;Natural Gas;76F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;Standard;1228.0
+100170;Essex County;NY;2;1960;Multi-Family with 2 - 4 Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 15.9;;854.0
+100172;Hudson County;NJ;2;1940;Multi-Family with 2 - 4 Units;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 21.9;EnergyStar;1138.0
+100173;Middlesex County;NJ;1;1950;Single-Family Attached;Natural Gas;62F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;;625.0
+100174;Multnomah County;OR;5;1940;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;Standard;1228.0
+100175;Boulder County;CO;5;1940;Single-Family Detached;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 15.9;EnergyStar;2678.0
+100176;Clark County;NV;2;1990;Single-Family Detached;Natural Gas;75F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 15.9;EnergyStar;1228.0
+100178;Passaic County;NJ;2;1960;Single-Family Detached;Natural Gas;60F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 15.9;EnergyStar;1228.0
+100179;Northumberland County;PA;3;1940;Single-Family Detached;Fuel Oil;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100180;Livingston Parish;LA;4;2000;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-19;EF 19.9;EnergyStar;2179.0
+100182;Boone County;IN;3;1940;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+100183;Greenwood County;SC;5;2000;Mobile Home;Electricity;65F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;;2678.0
+100184;Faulkner County;AR;4;1950;Single-Family Detached;Natural Gas;80F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 6.7;EnergyStar;1698.0
+100185;Middlesex County;MA;3;1970;Single-Family Detached;Electricity;68F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 17.6;Standard;2678.0
+100186;Morgan County;IN;3;1960;Single-Family Detached;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 6.7;Standard;1698.0
+100187;Yakima County;WA;5;1970;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 15.9;Standard;1228.0
+100189;Fairfield County;CT;3;1960;Single-Family Detached;Fuel Oil;78F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;;1698.0
+100191;Pottawattamie County;IA;2;1970;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;;322.0
+100194;Middlesex County;MA;3;1980;Single-Family Attached;Natural Gas;80F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;EnergyStar;1678.0
+100195;Philadelphia County;PA;2;1940;Single-Family Attached;Electricity;70F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;1207.0
+100196;Adams County;CO;3;2000;Single-Family Detached;Electricity;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 21.9;EnergyStar;3310.0
+100197;Cook County;IL;1;1950;Multi-Family with 5+ Units;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 15.9;;854.0
+100198;Clark County;NV;5;1980;Single-Family Detached;Natural Gas;75F;Single, Clear, Metal;Wood Stud, R-11;EF 15.9;Standard;5587.0
+100204;Norfolk County;MA;3;1950;Single-Family Detached;Propane;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+100205;Lancaster County;PA;3;1950;Single-Family Detached;Fuel Oil;75F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 17.6;Standard;1228.0
+100206;Klamath County;OR;3;2000;Mobile Home;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;;1698.0
+100208;Worcester County;MA;2;1940;Multi-Family with 2 - 4 Units;Electricity;67F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;854.0
+100209;Dickson County;TN;2;1960;Single-Family Detached;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100210;Muskogee County;OK;2;1950;Multi-Family with 2 - 4 Units;Natural Gas;75F;Single, Clear, Metal, Exterior Clear Storm;Wood Stud, Uninsulated;;;1682.0
+100212;Gila County;AZ;3;2010;Mobile Home;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;634.0
+100214;Brown County;WI;4;1960;Single-Family Detached;Wood;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 17.6;Standard;2179.0
+100216;Marion County;IN;2;1940;Single-Family Detached;Natural Gas;72F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 17.6;Standard;298.0
+100218;Webster County;KY;2;1980;Mobile Home;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-11;EF 17.6;Standard;1228.0
+100221;Elmore County;AL;3;1950;Single-Family Detached;Natural Gas;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100223;Wayne County;MI;1;1960;Multi-Family with 5+ Units;Natural Gas;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;;623.0
+100225;Montgomery County;AL;4;2000;Single-Family Detached;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 21.9;EnergyStar;3310.0
+100226;St. Tammany Parish;LA;3;1970;Single-Family Detached;Electricity;72F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1698.0
+100227;St. Louis County;MO;3;1980;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;1698.0
+100228;Worcester County;MD;3;1950;Single-Family Detached;Natural Gas;78F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1228.0
+100229;Manassas city;VA;2;1990;Multi-Family with 5+ Units;Electricity;72F;Single, Clear, Metal, Exterior Clear Storm;Wood Stud, R-11;EF 19.9;Standard;1682.0
+100230;St. Clair County;MI;3;1990;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-15;EF 19.9;Standard;3310.0
+100231;Davis County;UT;3;1950;Single-Family Detached;Natural Gas;76F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+100232;Kingman County;KS;2;1960;Single-Family Detached;Natural Gas;67F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;EnergyStar;2678.0
+100235;Cook County;IL;1;1960;Multi-Family with 5+ Units;Natural Gas;60F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;;854.0
+100236;New Haven County;CT;4;1950;Single-Family Detached;Fuel Oil;76F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, Uninsulated;EF 17.6;EnergyStar;2179.0
+100240;Tulsa County;OK;1;2000;Multi-Family with 5+ Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;854.0
+100241;Vigo County;IN;3;1990;Single-Family Detached;Natural Gas;80F;Double, Clear, Non-metal, Air;Wood Stud, R-15;EF 19.9;Standard;1228.0
+100243;Tippecanoe County;IN;2;1940;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;298.0
+100244;Ouachita Parish;LA;5;1970;Single-Family Detached;Electricity;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 19.9;EnergyStar;2179.0
+100245;Arapahoe County;CO;4;1940;Single-Family Detached;Natural Gas;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;Standard;2179.0
+100246;Pierce County;WI;3;2000;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-19;EF 19.9;Standard;1698.0
+100247;Sussex County;DE;4;1960;Single-Family Detached;Electricity;60F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100248;Iroquois County;IL;4;1960;Single-Family Detached;Electricity;68F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+100250;Macomb County;MI;4;1960;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1698.0
+100253;Coos County;OR;3;1990;Single-Family Detached;Electricity;72F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, R-11;EF 15.9;EnergyStar;1228.0
+100254;Warren County;KY;4;2000;Single-Family Detached;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;2678.0
+100255;Sussex County;NJ;3;1970;Single-Family Detached;Wood;76F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 19.9;Standard;1698.0
+100256;Spartanburg County;SC;2;2000;Single-Family Detached;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 17.6;Standard;1228.0
+100257;San Juan County;NM;4;1980;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;Standard;1698.0
+100259;Chase County;NE;3;2000;Single-Family Detached;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;5587.0
+100263;Pierce County;WA;2;1990;Multi-Family with 5+ Units;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;1138.0
+100264;York County;SC;5;1970;Single-Family Detached;Natural Gas;76F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;EnergyStar;2179.0
+100265;Newton County;GA;3;2000;Single-Family Detached;Electricity;68F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 17.6;EnergyStar;2179.0
+100266;Hampton city;VA;2;1950;Single-Family Detached;Natural Gas;76F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100267;Orleans Parish;LA;4;1980;Single-Family Attached;Electricity;70F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, R-11;EF 17.6;Standard;1678.0
+100269;Muskingum County;OH;4;1950;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;1698.0
+100270;Harrison County;MS;1;2000;Multi-Family with 2 - 4 Units;Electricity;78F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, R-15;EF 17.6;Standard;322.0
+100272;Platte County;MO;2;2000;Multi-Family with 5+ Units;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 17.6;;1138.0
+100273;Dorchester County;SC;4;2000;Single-Family Detached;Electricity;76F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 15.9;EnergyStar;1698.0
+100275;Pima County;AZ;2;1990;Multi-Family with 2 - 4 Units;Electricity;75F;Single, Clear, Non-metal;CMU, 6-in Hollow, R-11;EF 17.6;;1138.0
+100277;Skagit County;WA;3;2000;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;1228.0
+100278;Athens County;OH;2;1940;Single-Family Detached;Natural Gas;65F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+100280;Maricopa County;AZ;2;2000;Multi-Family with 5+ Units;Electricity;75F;Single, Clear, Metal;Wood Stud, R-11;EF 15.9;;1138.0
+100282;Chester County;PA;2;1940;Single-Family Attached;Natural Gas;70F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 15.9;Standard;1678.0
+100283;Armstrong County;PA;2;1980;Multi-Family with 5+ Units;Electricity;68F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;;1138.0
+100285;Allen County;IN;3;1980;Single-Family Detached;Natural Gas;80F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;1698.0
+100286;Milwaukee County;WI;3;1950;Single-Family Detached;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 17.6;EnergyStar;3310.0
+100287;Sabine Parish;LA;2;1980;Mobile Home;Electricity;65F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;Standard;881.0
+100289;Little River County;AR;2;1970;Single-Family Detached;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;Standard;1228.0
+100290;Wayne County;MI;2;1970;Single-Family Detached;Natural Gas;68F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-7;EF 17.6;Standard;1228.0
+100291;Spencer County;KY;5;2000;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 21.9;EnergyStar;3310.0
+100293;Vernon County;MO;4;1990;Single-Family Detached;Propane;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 15.9;EnergyStar;3310.0
+100294;Maricopa County;AZ;1;1990;Multi-Family with 5+ Units;Electricity;80F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;Standard;854.0
+100295;Anderson County;SC;3;1970;Mobile Home;Electricity;78F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;Standard;881.0
+100296;Lafayette Parish;LA;2;2010;Multi-Family with 5+ Units;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;1138.0
+100297;Petersburg city;VA;4;1940;Single-Family Detached;Propane;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 15.9;EnergyStar;2678.0
+100298;Hamilton County;IN;5;1960;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 6.7;Standard;3310.0
+100301;Cascade County;MT;5;1960;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;1698.0
+100302;Barry County;MI;3;2000;Mobile Home;Natural Gas;75F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 17.6;EnergyStar;1698.0
+100306;Oklahoma County;OK;3;1960;Single-Family Detached;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100307;St. Francis County;AR;2;1980;Mobile Home;Electricity;65F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;Standard;1228.0
+100315;Boulder County;CO;3;1950;Single-Family Detached;Natural Gas;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+100322;Henry County;KY;2;1990;Single-Family Detached;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 19.9;Standard;2179.0
+100323;Calcasieu Parish;LA;3;1960;Multi-Family with 2 - 4 Units;Natural Gas;72F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 17.6;;2115.0
+100325;Bristol County;MA;5;1970;Single-Family Detached;Fuel Oil;72F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-7;EF 19.9;Standard;5587.0
+100326;Maricopa County;AZ;2;2000;Multi-Family with 2 - 4 Units;Electricity;75F;Single, Clear, Metal;Wood Stud, R-19;EF 17.6;;854.0
+100328;Miami County;KS;3;1940;Single-Family Detached;Electricity;80F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;2179.0
+100331;Clackamas County;OR;1;1950;Multi-Family with 5+ Units;Electricity;70F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;623.0
+100336;Honolulu County;HI;3;2000;Single-Family Attached;Electricity;80F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;EnergyStar;1207.0
+100339;Plymouth County;MA;4;2000;Single-Family Detached;Fuel Oil;70F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;EnergyStar;2179.0
+100340;Multnomah County;OR;4;2000;Single-Family Detached;Natural Gas;76F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 17.6;EnergyStar;2179.0
+100342;Fairfield County;CT;3;1940;Single-Family Detached;Fuel Oil;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+100343;Porter County;IN;4;1960;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 6.7;EnergyStar;1228.0
+100345;Maricopa County;AZ;3;1990;Single-Family Detached;Electricity;78F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;2179.0
+100347;York County;ME;2;1980;Multi-Family with 2 - 4 Units;Fuel Oil;62F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, R-11;EF 17.6;Standard;623.0
+100349;Kenton County;KY;3;1990;Multi-Family with 5+ Units;Electricity;72F;Single, Clear, Non-metal;Wood Stud, R-15;EF 17.6;;1138.0
+100352;Stone County;MO;2;1980;Single-Family Detached;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;1698.0
+100354;Darlington County;SC;3;1990;Single-Family Detached;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 17.6;Standard;1228.0
+100356;Clark County;NV;3;1990;Single-Family Attached;Electricity;72F;Single, Clear, Metal, Exterior Clear Storm;Wood Stud, R-11;EF 19.9;EnergyStar;1678.0
+100357;Marion County;OR;3;1990;Single-Family Detached;Natural Gas;68F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;3310.0
+100358;Montcalm County;MI;3;1970;Single-Family Detached;Propane;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-7;EF 17.6;Standard;1698.0
+100363;Genesee County;MI;2;1950;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1228.0
+100365;Salt Lake County;UT;5;1950;Single-Family Detached;Natural Gas;70F;Single, Clear, Metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;;1228.0
+100372;Greenville County;SC;2;1970;Multi-Family with 5+ Units;Electricity;72F;Single, Clear, Non-metal;CMU, 6-in Hollow, Uninsulated;EF 19.9;;854.0
+100373;Kent County;MI;2;1950;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1228.0
+100376;Maricopa County;AZ;1;1990;Multi-Family with 5+ Units;Electricity;76F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;Standard;854.0
+100377;Pueblo County;CO;4;1990;Single-Family Detached;Natural Gas;60F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 6.7;EnergyStar;881.0
+100381;Hempstead County;AR;4;1970;Single-Family Detached;Electricity;72F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, R-7;EF 6.7;EnergyStar;2179.0
+100388;Fairfield County;CT;2;2010;Multi-Family with 5+ Units;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;854.0
+100390;Winnebago County;WI;4;2000;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;3310.0
+100391;Island County;WA;4;1980;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;2678.0
+100393;Shelby County;AL;5;1980;Single-Family Detached;Electricity;72F;Double, Clear, Metal, Air;CMU, 6-in Hollow, R-11;EF 19.9;Standard;5587.0
+100399;Jefferson County;KY;3;1940;Single-Family Detached;Electricity;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+100406;Summit County;UT;3;2010;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;3310.0
+100408;Prince George's County;MD;5;1960;Single-Family Detached;Electricity;78F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;EnergyStar;5587.0
+100418;Sumter County;AL;2;1990;Mobile Home;Electricity;72F;Single, Clear, Non-metal;Wood Stud, R-11;EF 17.6;Standard;634.0
+100420;Whatcom County;WA;3;1990;Single-Family Detached;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 6.7;Standard;2179.0
+100433;Middlesex County;CT;3;1950;Single-Family Detached;Fuel Oil;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;;EnergyStar;1228.0
+100435;Prince George's County;MD;2;1970;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1698.0
+100437;Campbell County;KY;1;1990;Multi-Family with 5+ Units;Electricity;60F;Single, Clear, Non-metal;Wood Stud, R-15;EF 17.6;EnergyStar;623.0
+100438;Salt Lake County;UT;3;1940;Single-Family Detached;Natural Gas;68F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+100439;St. Louis County;MN;2;1940;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;EnergyStar;881.0
+100440;Norfolk County;MA;4;1990;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;Standard;2179.0
+100446;Ritchie County;WV;3;1950;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1228.0
+100448;Montgomery County;MD;1;1980;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;EnergyStar;1698.0
+100451;Cherokee County;OK;2;1940;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+100452;Noxubee County;MS;3;2010;Single-Family Detached;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 19.9;EnergyStar;1698.0
+100456;Snohomish County;WA;4;1970;Single-Family Detached;Electricity;65F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-7;EF 19.9;EnergyStar;1228.0
+100459;Jefferson Parish;LA;2;1970;Single-Family Detached;Natural Gas;75F;Single, Clear, Metal;Wood Stud, R-7;EF 19.9;Standard;1228.0
+100460;Wayne County;WV;4;1990;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 10.5;Standard;2678.0
+100469;Todd County;SD;2;1960;Single-Family Detached;Propane;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 15.9;EnergyStar;298.0
+100476;Fairfield County;CT;3;1960;Single-Family Detached;Fuel Oil;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1698.0
+100477;Adair County;KY;2;1950;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 15.9;Standard;881.0
+100478;Johnson County;KS;3;1940;Single-Family Detached;Natural Gas;75F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1698.0
+100479;Cabell County;WV;2;1990;Mobile Home;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-15;EF 15.9;Standard;881.0
+100482;Laurel County;KY;3;2000;Single-Family Detached;Electricity;72F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;2179.0
+100485;Tama County;IA;5;1960;Single-Family Detached;Natural Gas;67F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;1698.0
+100487;Anne Arundel County;MD;2;2000;Multi-Family with 5+ Units;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 17.6;;854.0
+100491;Sumter County;SC;3;1970;Single-Family Detached;Electricity;68F;Single, Clear, Non-metal;Wood Stud, R-7;EF 17.6;EnergyStar;1228.0
+100496;Carroll County;MD;3;1940;Single-Family Detached;Fuel Oil;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;2179.0
+100498;Clark County;NV;4;2000;Single-Family Detached;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;3310.0
+100504;King County;WA;1;1990;Multi-Family with 2 - 4 Units;Electricity;68F;Single, Clear, Metal;Wood Stud, R-19;EF 17.6;;623.0
+100505;Roosevelt County;NM;2;1980;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 15.9;Standard;881.0
+100510;Montgomery County;AL;2;2000;Multi-Family with 5+ Units;Electricity;75F;Double, Clear, Metal, Air;CMU, 6-in Hollow, R-11;EF 17.6;Standard;1138.0
+100523;Salt Lake County;UT;2;1990;Multi-Family with 5+ Units;Natural Gas;68F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;Standard;1138.0
+100524;District of Columbia;DC;1;1940;Multi-Family with 5+ Units;Electricity;76F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 15.9;;854.0
+100527;Northwest Arctic Borough;AK;2;1980;Multi-Family with 5+ Units;Fuel Oil;70F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, R-19;EF 17.6;;623.0
+100531;Washington County;RI;4;1990;Single-Family Detached;Fuel Oil;70F;Double, Clear, Metal, Air;CMU, 6-in Hollow, R-11;EF 19.9;Standard;3310.0
+100532;Salt Lake County;UT;2;1940;Multi-Family with 2 - 4 Units;Natural Gas;72F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;;623.0
+100535;Mobile County;AL;3;1950;Single-Family Detached;Natural Gas;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+100543;Cass County;ND;1;1960;Single-Family Detached;Electricity;75F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, R-11;EF 17.6;EnergyStar;881.0
+100545;Marshall County;IA;5;1940;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 15.9;EnergyStar;1698.0
+100550;Story County;IA;3;1960;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;1228.0
+100559;Ada County;ID;4;2000;Single-Family Detached;Electricity;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;5587.0
+100563;Snohomish County;WA;1;1990;Multi-Family with 2 - 4 Units;Natural Gas;72F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, R-11;EF 17.6;Standard;623.0
+100566;Ford County;KS;3;1980;Single-Family Detached;Natural Gas;70F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 15.9;Standard;881.0
+100583;Waseca County;MN;2;1940;Single-Family Detached;Natural Gas;68F;Single, Clear, Non-metal, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-11;EF 19.9;Standard;634.0
+100591;New Haven County;CT;5;1990;Single-Family Detached;Natural Gas;72F;Single, Clear, Non-metal, Exterior Clear Storm;CMU, 6-in Hollow, R-19;EF 17.6;Standard;3310.0
+100597;Douglas County;NV;2;2000;Single-Family Detached;Wood;80F;Double, Clear, Non-metal, Air;Wood Stud, R-15;EF 19.9;EnergyStar;1228.0
+100600;Hinds County;MS;3;1980;Single-Family Detached;Natural Gas;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;2179.0
+100637;Elmore County;ID;4;2000;Single-Family Detached;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 17.6;Standard;2678.0
+100638;Davis County;UT;2;2010;Multi-Family with 5+ Units;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;854.0
+100639;Clark County;NV;3;1960;Single-Family Detached;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+100644;Polk County;IA;2;2000;Single-Family Attached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;1678.0
+100646;Kitsap County;WA;3;1950;Single-Family Detached;Electricity;68F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+100648;Clark County;NV;2;2000;Single-Family Detached;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 19.9;Standard;1228.0
+100650;Bernalillo County;NM;2;2010;Multi-Family with 5+ Units;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;854.0
+100655;Hartford County;CT;1;2000;Multi-Family with 2 - 4 Units;Natural Gas;68F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;Standard;854.0
+100656;Saline County;KS;2;1950;Single-Family Detached;Propane;76F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;881.0
+100663;Santa Fe County;NM;3;1990;Single-Family Detached;Natural Gas;80F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;1698.0
+100664;Strafford County;NH;4;1940;Multi-Family with 2 - 4 Units;Propane;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;2115.0
+100670;Bernalillo County;NM;2;1970;Multi-Family with 2 - 4 Units;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 17.6;;623.0
+100685;Rockingham County;NH;2;1970;Multi-Family with 2 - 4 Units;Natural Gas;62F;Single, Clear, Non-metal;Wood Stud, R-7;EF 19.9;;623.0
+100690;Clark County;NV;4;1970;Single-Family Detached;Electricity;70F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 19.9;EnergyStar;2678.0
+100692;Clark County;NV;2;2000;Single-Family Detached;Electricity;80F;Double, Clear, Metal, Air;Wood Stud, R-11;EF 21.9;EnergyStar;1228.0
+100699;Carver County;MN;4;1990;Single-Family Detached;Propane;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;2678.0
+100705;Stearns County;MN;3;1970;Mobile Home;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;1228.0
+100723;Eddy County;NM;4;1950;Single-Family Detached;Natural Gas;80F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;1228.0
+100728;Carroll County;NH;3;1960;Mobile Home;Fuel Oil;70F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+100730;Pulaski County;AR;3;2000;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, R-19;EF 19.9;Standard;2678.0
+100735;Polk County;IA;2;1950;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 17.6;Standard;1228.0
+100737;Adams County;NE;3;1940;Single-Family Detached;Electricity;70F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1698.0
+100738;Tulsa County;OK;2;1990;Multi-Family with 2 - 4 Units;Electricity;72F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;;623.0
+100768;Johnson County;KS;4;2000;Single-Family Detached;Electricity;70F;Double, Clear, Metal, Air;Wood Stud, R-15;EF 19.9;Standard;5587.0
+100771;Fayette County;WV;2;1990;Mobile Home;Electricity;70F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-15;EF 17.6;EnergyStar;2179.0
+100773;Sussex County;DE;1;1980;Mobile Home;Propane;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 15.9;EnergyStar;881.0
+100789;Providence County;RI;2;1950;Single-Family Detached;Natural Gas;80F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+100792;Providence County;RI;2;1990;Multi-Family with 2 - 4 Units;Natural Gas;80F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;;1138.0
+100816;Shawnee County;KS;1;2000;Multi-Family with 5+ Units;Electricity;60F;Double, Clear, Metal, Air;Wood Stud, R-11;;;623.0
+100830;Ada County;ID;3;1970;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 10.5;Standard;1228.0
+100832;Honolulu County;HI;3;1970;Single-Family Detached;;75F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;Standard;1228.0
+100849;Putnam County;WV;3;1970;Single-Family Detached;Electricity;72F;Double, Clear, Non-metal, Air;Wood Stud, R-7;EF 17.6;Standard;2179.0
+100851;Hancock County;ME;3;1990;Single-Family Detached;Fuel Oil;72F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 15.9;Standard;2179.0
+100853;District of Columbia;DC;4;2000;Single-Family Attached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;3228.0
+100859;Sarpy County;NE;2;1980;Multi-Family with 5+ Units;Electricity;78F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 17.6;;1138.0
+100866;Hillsborough County;NH;5;1980;Single-Family Detached;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 6.7;EnergyStar;5587.0
+100878;Lancaster County;NE;3;2000;Single-Family Attached;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;EnergyStar;2152.0
+100894;Minnehaha County;SD;3;2000;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;2678.0
+100900;Jackson County;MS;3;1980;Mobile Home;Electricity;78F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, R-11;EF 17.6;Standard;634.0
+100933;Luna County;NM;1;1990;Mobile Home;Electricity;72F;Single, Clear, Metal;Wood Stud, R-19;EF 17.6;EnergyStar;298.0
+100953;Providence County;RI;2;1940;Multi-Family with 2 - 4 Units;Natural Gas;62F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;;854.0
+100996;Caledonia County;VT;3;1960;Single-Family Detached;Fuel Oil;67F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 15.9;;1698.0
+101013;Bonneville County;ID;2;1940;Single-Family Detached;Propane;72F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;Standard;634.0
+101026;Washington County;RI;2;1940;Single-Family Attached;Natural Gas;70F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1678.0
+101040;Waldo County;ME;1;1990;Multi-Family with 5+ Units;Electricity;70F;Double, Clear, Metal, Air;CMU, 6-in Hollow, R-19;EF 19.9;;322.0
+101054;Ward County;ND;2;2010;Mobile Home;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;634.0
+101080;Honolulu County;HI;4;1980;Single-Family Detached;;70F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-11;EF 19.9;EnergyStar;2179.0
+101081;Cumberland County;ME;2;1940;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal;CMU, 6-in Hollow, Uninsulated;EF 17.6;Standard;1228.0
+101096;Bernalillo County;NM;4;1970;Multi-Family with 2 - 4 Units;Natural Gas;65F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1138.0
+101128;Hot Spring County;AR;3;1970;Single-Family Detached;Natural Gas;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 6.7;Standard;1228.0
+101177;Windsor County;VT;2;1960;Single-Family Detached;Propane;70F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 19.9;Standard;2179.0
+101193;Ward County;ND;3;1980;Single-Family Detached;Natural Gas;75F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;2179.0
+101195;Saunders County;NE;4;2000;Single-Family Detached;Propane;72F;Double, Clear, Metal, Air, Exterior Clear Storm;Wood Stud, R-11;EF 15.9;EnergyStar;2179.0
+101224;Sussex County;DE;1;1990;Multi-Family with 5+ Units;Electricity;78F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-15;EF 6.7;;1138.0
+101238;Coos County;NH;3;1990;Mobile Home;Fuel Oil;65F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;1228.0
+101267;Monongalia County;WV;5;1960;Single-Family Detached;Natural Gas;72F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;2678.0
+101275;Canyon County;ID;3;1980;Mobile Home;Electricity;75F;Single, Clear, Metal;Wood Stud, R-11;EF 19.9;Standard;2678.0
+101282;Missoula County;MT;3;1970;Single-Family Detached;Wood;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 19.9;EnergyStar;1228.0
+101303;Honolulu County;HI;3;1950;Single-Family Detached;;75F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+101341;Elmore County;ID;2;2000;Single-Family Detached;Propane;76F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;1228.0
+101343;York County;ME;5;1980;Single-Family Detached;Fuel Oil;70F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, R-11;EF 17.6;Standard;5587.0
+101346;Cumberland County;ME;2;1940;Multi-Family with 2 - 4 Units;Fuel Oil;75F;Double, Clear, Metal, Air;CMU, 6-in Hollow, Uninsulated;EF 17.6;;854.0
+101387;Carroll County;NH;3;1940;Single-Family Detached;Fuel Oil;68F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;EnergyStar;2179.0
+101399;Sullivan County;NH;3;2010;Multi-Family with 5+ Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;;1682.0
+101400;Barbour County;WV;2;1970;Single-Family Detached;Natural Gas;68F;Single, Clear, Non-metal, Exterior Clear Storm;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;881.0
+101420;Lincoln County;SD;3;1980;Single-Family Detached;Natural Gas;72F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;Standard;1698.0
+101433;Pembina County;ND;2;1970;Multi-Family with 5+ Units;Electricity;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;;1138.0
+101454;Honolulu County;HI;4;1950;Single-Family Detached;Electricity;80F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+101460;Raleigh County;WV;3;2010;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;2179.0
+101467;Cass County;NE;1;1990;Multi-Family with 5+ Units;Natural Gas;68F;Single, Clear, Metal;Wood Stud, R-11;EF 17.6;EnergyStar;623.0
+101483;Ward County;ND;2;1980;Multi-Family with 5+ Units;Electricity;65F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;;854.0
+101506;Douglas County;NE;3;1970;Single-Family Detached;Electricity;68F;Single, Clear, Non-metal;Wood Stud, R-7;EF 19.9;EnergyStar;2179.0
+101509;Ada County;ID;3;2010;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;2179.0
+101523;Park County;WY;5;1980;Single-Family Detached;Propane;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;Standard;3310.0
+101541;Carbon County;WY;2;2010;Multi-Family with 5+ Units;Natural Gas;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;854.0
+101549;Honolulu County;HI;2;1970;Multi-Family with 2 - 4 Units;;75F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-7;EF 15.9;;1138.0
+101552;District of Columbia;DC;3;1940;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 15.9;EnergyStar;1698.0
+101559;Berkeley County;WV;1;1960;Multi-Family with 2 - 4 Units;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;Standard;322.0
+101576;Providence County;RI;1;1960;Multi-Family with 5+ Units;Natural Gas;68F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 17.6;;854.0
+101580;Sussex County;DE;4;1990;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;1698.0
+101594;Berkeley County;WV;3;2010;Single-Family Detached;Electricity;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 17.6;EnergyStar;1228.0
+101616;Merrimack County;NH;4;1980;Single-Family Detached;Fuel Oil;70F;Single, Clear, Non-metal;Wood Stud, R-19;EF 19.9;Standard;1698.0
+101627;Sussex County;DE;3;2000;Single-Family Detached;Electricity;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;1698.0
+101646;Kent County;DE;3;2000;Single-Family Detached;Electricity;78F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;Standard;1228.0
+101662;Butte County;SD;3;1990;Mobile Home;Natural Gas;75F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;Standard;1228.0
+101671;Knox County;NE;4;1980;Mobile Home;Natural Gas;60F;Double, Clear, Non-metal, Air;Wood Stud, R-11;EF 19.9;EnergyStar;1228.0
+101674;Newport County;RI;4;1960;Single-Family Detached;Electricity;67F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 19.9;EnergyStar;2678.0
+101683;Washington County;RI;2;1960;Single-Family Detached;Wood;70F;Double, Clear, Metal, Air, Exterior Clear Storm;Wood Stud, Uninsulated;EF 19.9;EnergyStar;1228.0
+101687;Rutland County;VT;3;1960;Single-Family Detached;Wood;60F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 21.9;EnergyStar;2179.0
+101696;Kent County;RI;4;1940;Single-Family Detached;Fuel Oil;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+101710;Strafford County;NH;2;1980;Mobile Home;Fuel Oil;70F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, R-11;EF 19.9;EnergyStar;1228.0
+101728;Aroostook County;ME;4;1980;Single-Family Detached;Fuel Oil;72F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, R-11;EF 19.9;Standard;3310.0
+101736;New Castle County;DE;4;1940;Single-Family Detached;Natural Gas;70F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, Uninsulated;EF 15.9;Standard;3310.0
+101750;Maui County;HI;3;1990;Multi-Family with 5+ Units;;76F;Single, Clear, Metal;Brick, 12-in, 3-wythe, R-11;EF 19.9;Standard;1682.0
+101762;Caledonia County;VT;1;1980;Multi-Family with 2 - 4 Units;Propane;65F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 19.9;EnergyStar;623.0
+101886;Minnehaha County;SD;2;1940;Single-Family Detached;Natural Gas;60F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;Standard;1228.0
+101888;District of Columbia;DC;3;1940;Single-Family Attached;Natural Gas;72F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 6.7;EnergyStar;3228.0
+101889;Lawrence County;SD;3;1990;Multi-Family with 2 - 4 Units;Electricity;70F;Single, Clear, Metal;Wood Stud, R-19;EF 17.6;Standard;854.0
+101901;Washington County;ME;3;1940;Single-Family Detached;Fuel Oil;76F;Double, Low-E, Non-metal, Air, M-Gain;CMU, 6-in Hollow, Uninsulated;EF 17.6;Standard;2179.0
+101916;Cass County;ND;2;1970;Multi-Family with 5+ Units;Electricity;67F;Single, Clear, Metal;Wood Stud, R-11;EF 15.9;;1138.0
+101924;Kennebec County;ME;4;1940;Single-Family Detached;Fuel Oil;60F;Single, Clear, Non-metal, Exterior Clear Storm;CMU, 6-in Hollow, Uninsulated;EF 17.6;Standard;3310.0
+101932;Piscataquis County;ME;5;1990;Single-Family Detached;Fuel Oil;60F;Double, Clear, Non-metal, Air;CMU, 6-in Hollow, R-19;EF 17.6;Standard;3310.0
+102072;Lake and Peninsula Borough;AK;3;1980;Single-Family Detached;Fuel Oil;68F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;881.0
+102130;Burleigh County;ND;3;1940;Single-Family Detached;Propane;72F;Single, Clear, Non-metal, Exterior Clear Storm;Wood Stud, R-7;EF 15.9;;1228.0
+102141;Cass County;ND;1;2000;Multi-Family with 5+ Units;Electricity;60F;Double, Clear, Non-metal, Air;Wood Stud, R-19;EF 17.6;Standard;854.0
+102146;Yellowstone County;MT;2;2010;Multi-Family with 2 - 4 Units;Electricity;60F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;1138.0
+102300;District of Columbia;DC;2;1950;Multi-Family with 5+ Units;Electricity;68F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 15.9;;854.0
+102392;District of Columbia;DC;1;1960;Multi-Family with 5+ Units;Electricity;72F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 17.6;;854.0
+102435;Yellowstone County;MT;2;1990;Single-Family Attached;Electricity;72F;Single, Clear, Non-metal;Wood Stud, R-15;EF 17.6;Standard;1207.0
+102550;Hoonah-Angoon Census Area;AK;4;1980;Single-Family Detached;Fuel Oil;72F;Double, Clear, Metal, Air;Brick, 12-in, 3-wythe, R-19;EF 19.9;EnergyStar;1698.0
+102589;Yellowstone County;MT;1;1970;Multi-Family with 2 - 4 Units;Natural Gas;68F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-7;EF 17.6;Standard;1138.0
+102635;Cascade County;MT;3;1950;Single-Family Detached;Natural Gas;65F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1228.0
+102688;Fall River County;SD;3;1990;Mobile Home;Propane;78F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 15.9;EnergyStar;1228.0
+102714;Rutland County;VT;2;1960;Single-Family Detached;Fuel Oil;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, Uninsulated;EF 19.9;EnergyStar;298.0
+102743;Honolulu County;HI;2;1970;Multi-Family with 5+ Units;;70F;Single, Clear, Metal;Wood Stud, Uninsulated;EF 19.9;;854.0
+102745;Ziebach County;SD;3;1940;Single-Family Detached;Electricity;75F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 6.7;EnergyStar;1228.0
+102819;Honolulu County;HI;2;1990;Multi-Family with 5+ Units;;76F;Double, Clear, Metal, Air, Exterior Clear Storm;CMU, 6-in Hollow, R-19;EF 17.6;EnergyStar;1138.0
+102849;Skagway Municipality;AK;4;1990;Single-Family Detached;Fuel Oil;75F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Wood Stud, R-19;EF 21.9;Standard;1698.0
+102910;Caledonia County;VT;3;1940;Single-Family Detached;Wood;65F;Double, Clear, Metal, Air;Wood Stud, Uninsulated;EF 17.6;EnergyStar;1698.0
+102918;Kent County;DE;4;1990;Single-Family Detached;Other Fuel;60F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-11;EF 17.6;Standard;1698.0
+102992;Maui County;HI;3;1950;Single-Family Detached;;80F;Single, Clear, Non-metal;Wood Stud, Uninsulated;EF 19.9;Standard;1228.0
+103032;Yellowstone County;MT;2;2000;Mobile Home;Propane;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;1698.0
+103114;Windsor County;VT;1;1950;Multi-Family with 2 - 4 Units;Fuel Oil;75F;Double, Clear, Non-metal, Air;Wood Stud, Uninsulated;EF 17.6;Standard;322.0
+103147;Laramie County;WY;3;1970;Single-Family Detached;Electricity;68F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;Standard;1228.0
+103248;Beadle County;SD;1;1940;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-15;EF 19.9;Standard;881.0
+103581;Gallatin County;MT;3;2000;Single-Family Detached;Natural Gas;70F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;Standard;2179.0
+103662;District of Columbia;DC;2;1940;Single-Family Attached;Natural Gas;72F;Double, Clear, Non-metal, Air;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;EnergyStar;872.0
+103793;Anchorage Municipality;AK;1;1970;Multi-Family with 5+ Units;Wood;70F;Double, Low-E, Non-metal, Air, M-Gain;Brick, 12-in, 3-wythe, R-11;EF 17.6;;322.0
+103975;Sweetwater County;WY;4;2000;Single-Family Detached;Wood;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;3310.0
+103986;Washington County;VT;4;1990;Single-Family Detached;Fuel Oil;62F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;EnergyStar;2179.0
+104017;Caledonia County;VT;3;2000;Single-Family Detached;Fuel Oil;78F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;1228.0
+104101;Pennington County;SD;2;1940;Single-Family Detached;Wood;62F;Double, Clear, Metal, Air;Wood Stud, R-19;EF 19.9;EnergyStar;881.0
+104118;District of Columbia;DC;2;1950;Multi-Family with 5+ Units;Electricity;68F;Double, Clear, Metal, Air;CMU, 6-in Hollow, Uninsulated;EF 19.9;;322.0
+104269;Denali Borough;AK;3;1980;Single-Family Detached;Fuel Oil;72F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-19;EF 19.9;Standard;1228.0
+104280;Campbell County;WY;4;2000;Single-Family Detached;Natural Gas;72F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;Standard;3310.0
+104305;Kodiak Island Borough;AK;4;1980;Single-Family Detached;Fuel Oil;70F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-15;EF 19.9;Standard;2179.0
+104399;Natrona County;WY;4;1970;Single-Family Detached;Electricity;68F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-7;EF 19.9;Standard;881.0
+104815;Yellowstone County;MT;4;1970;Mobile Home;Natural Gas;75F;Double, Clear, Metal, Air;Wood Stud, R-7;EF 19.9;Standard;2179.0
+104958;Natrona County;WY;4;2010;Single-Family Detached;Natural Gas;70F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 19.9;EnergyStar;3310.0
+104971;Albany County;WY;3;1960;Single-Family Detached;Natural Gas;75F;Triple, Low-E, Non-metal, Air, L-Gain;Wood Stud, Uninsulated;EF 19.9;Standard;1698.0
+105256;Anchorage Municipality;AK;3;1950;Single-Family Detached;Natural Gas;65F;Double, Clear, Non-metal, Air, Exterior Clear Storm;Brick, 12-in, 3-wythe, R-7;EF 19.9;Standard;1698.0
+105425;District of Columbia;DC;3;1940;Single-Family Attached;Natural Gas;72F;Triple, Low-E, Non-metal, Air, L-Gain;Brick, 12-in, 3-wythe, Uninsulated;EF 19.9;Standard;2152.0
+106536;Kodiak Island Borough;AK;3;1980;Single-Family Detached;Fuel Oil;75F;Double, Low-E, Non-metal, Air, M-Gain;Wood Stud, R-19;EF 17.6;Standard;1698.0

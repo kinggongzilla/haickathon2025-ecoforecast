@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 from chronos import Chronos2Pipeline
 from inference import make_prediction
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Load the model once when the server starts
 print("Loading Chronos2 model...")
@@ -53,6 +55,7 @@ def building_data():
         
         # Call the prediction function
         pred_df = make_prediction(
+            pipeline=pipeline,
             state=state,
             sqft=sqft,
             county_name=county_name,

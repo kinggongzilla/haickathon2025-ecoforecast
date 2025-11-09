@@ -1,7 +1,7 @@
 import pandas as pd  # requires: pip install 'pandas[pyarrow]'
 from chronos import Chronos2Pipeline
 
-def make_prediction(state, sqft, county_name=None, bedrooms=None, vintage=None,
+def make_prediction(pipeline, state, sqft, county_name=None, bedrooms=None, vintage=None,
                        geometry_building_type_recs=None, heating_fuel=None,
                        cooling_setpoint=None, windows=None, insulation_wall=None,
                        refrigerator=None, clothes_washer=None):

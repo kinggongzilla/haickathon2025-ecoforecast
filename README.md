@@ -7,11 +7,12 @@ Predict your building's electricity consumption 12 months ahead with AI-powered 
 ![Forecast](project_information/forecast.jpeg)
 *Shows how much electricity your house will use*
 
-![Building Input Form](project_information/forecast.jpeg)
+![Building Input Form](project_information/form.jpeg)
 *Input your building details for personalized forecasting*
 
-![Personal Recommendations](project_information/forecast.jpeg)
+![Personal Recommendations](project_information/recommendations.png)
 *Personal smart AI recommendations to save electricity based on your House configurations*
+
 ---
 
 ## ✨ What It Does

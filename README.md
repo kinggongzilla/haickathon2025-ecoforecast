@@ -9,6 +9,9 @@ Predict your building's electricity consumption 12 months ahead with AI-powered 
 
 ![Building Input Form](project_information/forecast.jpeg)
 *Input your building details for personalized forecasting*
+
+![Personal Recommendations](project_information/forecast.jpeg)
+*Personal smart AI recommendations to save electricity based on your House configurations*
 ---
 
 ## ✨ What It Does

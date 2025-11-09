@@ -6,7 +6,7 @@ interface BuildingFormData {
   'in.state': string;
   'in.sqft..ft2': number;
   'in.bedrooms'?: number;
-  'in.vintage'?: string;
+  'in.vintage'?: number;
   'in.geometry_building_type_recs'?: string;
   'in.heating_fuel'?: string;
   'in.windows'?: string;
@@ -28,7 +28,7 @@ const STATES = [
 const BEDROOMS = [1, 2, 3, 4, 5];
 
 const VINTAGES = [
-  "<1940", "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s"
+  1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010
 ];
 
 const BUILDING_TYPES = [
@@ -152,18 +152,17 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
 
         <div className="col-span-1">
           <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-            Vintage
+            Construction Year
           </label>
-          <select
+          <input
+            type="number"
             value={formData['in.vintage'] || ''}
-            onChange={(e) => handleInputChange('in.vintage', e.target.value)}
+            onChange={(e) => handleInputChange('in.vintage', e.target.value ? parseInt(e.target.value) : undefined)}
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
-          >
-            <option value="">Select vintage</option>
-            {VINTAGES.map(vintage => (
-              <option key={vintage} value={vintage}>{vintage}</option>
-            ))}
-          </select>
+            placeholder="e.g., 1990"
+            min="1900"
+            max="2024"
+          />
         </div>
 
         <div className="col-span-1">
@@ -172,7 +171,7 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
           </label>
           <select
             value={formData['in.geometry_building_type_recs'] || ''}
-            onChange={(e) => handleInputChange('in.geometry_building_type_recs', e.target.value)}
+            onChange={(e) => handleInputChange('in.geometry_building_type_recs', e.target.value || undefined)}
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select building type</option>
@@ -188,7 +187,7 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
           </label>
           <select
             value={formData['in.heating_fuel'] || ''}
-            onChange={(e) => handleInputChange('in.heating_fuel', e.target.value)}
+            onChange={(e) => handleInputChange('in.heating_fuel', e.target.value || undefined)}
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select heating fuel</option>
@@ -204,7 +203,7 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
           </label>
           <select
             value={formData['in.windows'] || ''}
-            onChange={(e) => handleInputChange('in.windows', e.target.value)}
+            onChange={(e) => handleInputChange('in.windows', e.target.value || undefined)}
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select window type</option>
@@ -220,7 +219,7 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
           </label>
           <select
             value={formData['in.insulation_wall'] || ''}
-            onChange={(e) => handleInputChange('in.insulation_wall', e.target.value)}
+            onChange={(e) => handleInputChange('in.insulation_wall', e.target.value || undefined)}
             className="w-full px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-zinc-800 dark:text-zinc-50"
           >
             <option value="">Select wall insulation</option>

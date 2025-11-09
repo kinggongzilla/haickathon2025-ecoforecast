@@ -4,9 +4,9 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 interface PredictionData {
   timestamp: string;
-  '0.1': number;
+  '0.25': number;
   '0.5': number;
-  '0.9': number;
+  '0.75': number;
   [key: string]: any;
 }
 
@@ -32,9 +32,9 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
       if (dayPredictions.length === 0) break;
 
       // Calculate average for each quantile
-      const avg10 = dayPredictions.reduce((sum, p) => sum + (p['0.1'] || 0), 0) / dayPredictions.length;
+      const avg25 = dayPredictions.reduce((sum, p) => sum + (p['0.25'] || 0), 0) / dayPredictions.length;
       const avg50 = dayPredictions.reduce((sum, p) => sum + (p['0.5'] || 0), 0) / dayPredictions.length;
-      const avg90 = dayPredictions.reduce((sum, p) => sum + (p['0.9'] || 0), 0) / dayPredictions.length;
+      const avg75 = dayPredictions.reduce((sum, p) => sum + (p['0.75'] || 0), 0) / dayPredictions.length;
 
       // Generate date for this day (starting from tomorrow)
       const currentDate = new Date();
@@ -45,9 +45,9 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
       dailyData.push({
         name: futureDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
         date: futureDate,
-        'Lower Bound (10%)': avg10,
+        'Lower Bound (25%)': avg25,
         'Median (50%)': avg50,
-        'Upper Bound (90%)': avg90,
+        'Upper Bound (75%)': avg75,
       });
     }
 
@@ -58,13 +58,13 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
 
   return (
     <div className="w-full max-w-6xl bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-8 mt-8">
-      <h2 className="text-2xl font-bold mb-6 text-zinc-900 dark:text-zinc-50">12-Month Electricity Forecast</h2>
+      <h2 className="text-2xl font-bold mb-6 text-zinc-900 dark:text-zinc-50">12-Month Energy Forecast</h2>
 
       <div className="mb-4">
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          This chart shows the predicted daily electricity consumption for the next 12 months (365 days).
+          This chart shows the predicted daily energy consumption for the next 12 months (365 days).
           The median line represents the most likely consumption, while the upper and lower bounds
-          show the 90th and 10th percentile predictions.
+          show the 75th and 25th percentile predictions.
         </p>
       </div>
 
@@ -102,7 +102,7 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
           <Legend />
           <Line
             type="monotone"
-            dataKey="Lower Bound (10%)"
+            dataKey="Lower Bound (25%)"
             stroke="#93c5fd"
             strokeWidth={2}
             dot={false}
@@ -117,7 +117,7 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
           />
           <Line
             type="monotone"
-            dataKey="Upper Bound (90%)"
+            dataKey="Upper Bound (75%)"
             stroke="#93c5fd"
             strokeWidth={2}
             dot={false}

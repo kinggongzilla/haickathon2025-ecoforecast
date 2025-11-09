@@ -83,7 +83,7 @@ export default function Home() {
             EcoForecast AI
           </h1>
           <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-            12-Month Building Electricity AI Forecast with Energy Reduction Recommendations
+            12-Month Building Energy AI Forecast with Energy Reduction Recommendations
           </p>
         </div>
 

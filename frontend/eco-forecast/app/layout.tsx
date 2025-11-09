@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EcoForecast AI - 12-Month Building Electricity Forecast",
-  description: "Predict your building's 12-month electricity consumption with AI-powered forecasting and receive personalized energy reduction recommendations.",
+  title: "EcoForecast AI - 12-Month Building Energy Forecast",
+  description: "Predict your building's 12-month energy consumption with AI-powered forecasting and receive personalized energy reduction recommendations.",
 };
 
 export default function RootLayout({

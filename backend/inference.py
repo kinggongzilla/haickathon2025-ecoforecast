@@ -131,11 +131,50 @@ def make_prediction(pipeline, state, sqft, county_name=None, bedrooms=None, vint
     pred_df = pipeline.predict_df(
         context_df,
         prediction_length=1460,  # Forecast 12 months ahead (4 datapoints/day × 365 days)
-        quantile_levels=[0.1, 0.5, 0.9],  # Quantiles for probabilistic forecast
+        quantile_levels=[0.25, 0.5, 0.75],  # Narrower confidence bands: 25%, 50%, 75%
         id_column="ID",  # Column identifying different time series
         timestamp_column="timestamp",  # Column with datetime information
         target="target",  # Column with electricity consumption values to predict
     )
+
+    print(f"Prediction DataFrame info:")
+    print(f"Shape: {pred_df.shape}")
+    print(f"Columns: {pred_df.columns.tolist()}")
+    print(f"Column types: {pred_df.dtypes.to_dict()}")
+    print(f"First row: {pred_df.iloc[0].to_dict()}")
+
+    # Apply seasonal bias to predictions
+    def get_seasonal_multiplier(month):
+        """Winter months get higher consumption, summer months lower"""
+        seasonal_factors = {
+            1: 1.15, 2: 1.15, 3: 1.08, 4: 1.02, 5: 0.95, 6: 0.90,
+            7: 0.90, 8: 0.90, 9: 0.95, 10: 1.02, 11: 1.08, 12: 1.15
+        }
+        return seasonal_factors.get(month, 1.0)
+
+    # Check if timestamp column exists
+    if 'timestamp' in pred_df.columns:
+        # Ensure timestamp is datetime
+        pred_df['timestamp'] = pd.to_datetime(pred_df['timestamp'])
+
+        # Extract month and calculate multiplier
+        pred_df['month'] = pred_df['timestamp'].dt.month
+        pred_df['seasonal_multiplier'] = pred_df['month'].apply(get_seasonal_multiplier)
+
+        # Find quantile columns (they might be strings or floats)
+        quantile_cols = [col for col in pred_df.columns if str(col) in ['0.25', '0.5', '0.75']]
+        print(f"Found quantile columns: {quantile_cols}")
+
+        # Apply seasonal multiplier to each quantile column
+        for col in quantile_cols:
+            old_mean = pred_df[col].mean()
+            pred_df[col] = pred_df[col] * pred_df['seasonal_multiplier']
+            new_mean = pred_df[col].mean()
+            print(f"Applied seasonal bias to column '{col}': mean {old_mean:.2f} -> {new_mean:.2f}")
+
+        # Clean up temporary columns
+        pred_df = pred_df.drop(columns=['month', 'seasonal_multiplier'])
+        print("✓ Applied seasonal bias: Winter +15%, Summer -10%")
 
     return pred_df
 

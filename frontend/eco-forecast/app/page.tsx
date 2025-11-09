@@ -29,7 +29,12 @@ export default function Home() {
     console.log('JSON payload:', JSON.stringify(formData));
 
     try {
-      const response = await fetch('http://localhost:5000/building-data', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const endpoint = apiUrl ? `${apiUrl}/building-data` : '/api/building-data';
+
+      console.log('API endpoint:', endpoint);
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,10 +45,14 @@ export default function Home() {
       console.log('Response status:', response.status);
 
       if (!response.ok) {
-        throw new Error(`Error: ${response.statusText}`);
+        // Try to get error details from response
+        const errorData = await response.json().catch(() => null);
+        const errorMessage = errorData?.message || response.statusText;
+        throw new Error(errorMessage);
       }
 
       const data = await response.json();
+      console.log('Response data:', data);
 
       if (data.status === 'success') {
         setPredictions(data.predictions);

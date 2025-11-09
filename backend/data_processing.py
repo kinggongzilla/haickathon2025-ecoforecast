@@ -305,24 +305,25 @@ def run_full_analysis(query: dict,
 
 
 
-#### How to use ####
-# corrected_query = {
-#     # Text-based criteria
-#     'in.state': 'FL',
-#     'in.geometry_building_type_recs': 'Single-Family Detached',
-#     'in.heating_fuel': 'Electricity',
-#     'in.windows': 'Low-E',
-#     'in.insulation_wall': 'CMU, 6-in Hollow, R-19',
+# if name main
+if __name__ == "__main__":
+    corrected_query = {
+        # Text-based criteria
+        'in.state': 'AR',
+        # 'in.geometry_building_type_recs': 'Single-Family Detached',
+        # 'in.heating_fuel': 'Electricity',
+        # 'in.windows': 'Low-E',
+        # 'in.insulation_wall': 'CMU, 6-in Hollow, R-19',
 
-#     # Numeric-based criteria
-#     'in.bedrooms': 3,
-#     'in.vintage': 2000,
-#     'in.sqft..ft2': 1800
-# }
+        # Numeric-based criteria
+        # 'in.bedrooms': 3,
+        # 'in.vintage': 2000,
+        'in.sqft..ft2': 1800
+    }
 
-# final_continuous_df = run_full_analysis(query=corrected_query,
-#                                         characteristics_csv="transformed/house_characteristics_clean.csv", 
-#                                         time_series_csv= "transformed/time_series.csv", 
-#                                         end_date= '2018-10-01 00:00:00')
+    final_continuous_df = run_full_analysis(query=corrected_query,
+                                            characteristics_csv="transformed/house_characteristics_clean.csv", 
+                                            time_series_csv= "transformed/time_series.csv", 
+                                            end_date= '2018-10-01 00:00:00')
 
-# print(final_continuous_df)
+    print(final_continuous_df)

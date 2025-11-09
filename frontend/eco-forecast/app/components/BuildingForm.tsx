@@ -84,11 +84,16 @@ export default function BuildingForm({ onSubmit, isLoading }: BuildingFormProps)
     onSubmit(formData);
   };
 
-  const handleInputChange = (field: keyof BuildingFormData, value: string | number) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
+  const handleInputChange = (field: keyof BuildingFormData, value: string | number | undefined) => {
+    if (value === undefined) {
+      const { [field]: _, ...rest } = formData;
+      setFormData(rest as BuildingFormData);
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [field]: value
+      }));
+    }
   };
 
   return (

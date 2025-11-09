@@ -20,19 +20,41 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
   }
 
   // Transform the data for better display
-  // Generate dates starting from current month for next 12 months
-  const chartData = predictions.slice(0, 12).map((pred, index) => {
-    const currentDate = new Date();
-    const futureDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + index, 1);
-    const formattedDate = futureDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  // Aggregate 6-hourly predictions (4 per day) into daily averages
+  // Expected: 1,460 predictions (4 datapoints/day × 365 days)
+  const aggregateToDailyAverages = (data: PredictionData[]) => {
+    const dailyData = [];
+    const pointsPerDay = 4; // 6-hour intervals = 4 datapoints per day
 
-    return {
-      name: formattedDate,
-      'Lower Bound (10%)': pred['0.1'] || 0,
-      'Median (50%)': pred['0.5'] || 0,
-      'Upper Bound (90%)': pred['0.9'] || 0,
-    };
-  });
+    for (let i = 0; i < data.length; i += pointsPerDay) {
+      const dayPredictions = data.slice(i, i + pointsPerDay);
+
+      if (dayPredictions.length === 0) break;
+
+      // Calculate average for each quantile
+      const avg10 = dayPredictions.reduce((sum, p) => sum + (p['0.1'] || 0), 0) / dayPredictions.length;
+      const avg50 = dayPredictions.reduce((sum, p) => sum + (p['0.5'] || 0), 0) / dayPredictions.length;
+      const avg90 = dayPredictions.reduce((sum, p) => sum + (p['0.9'] || 0), 0) / dayPredictions.length;
+
+      // Generate date for this day (starting from tomorrow)
+      const currentDate = new Date();
+      currentDate.setHours(0, 0, 0, 0);
+      const futureDate = new Date(currentDate);
+      futureDate.setDate(currentDate.getDate() + (i / pointsPerDay) + 1);
+
+      dailyData.push({
+        name: futureDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        date: futureDate,
+        'Lower Bound (10%)': avg10,
+        'Median (50%)': avg50,
+        'Upper Bound (90%)': avg90,
+      });
+    }
+
+    return dailyData;
+  };
+
+  const chartData = aggregateToDailyAverages(predictions);
 
   return (
     <div className="w-full max-w-6xl bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-8 mt-8">
@@ -40,7 +62,7 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
 
       <div className="mb-4">
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          This chart shows the predicted electricity consumption for the next 12 months.
+          This chart shows the predicted daily electricity consumption for the next 12 months (365 days).
           The median line represents the most likely consumption, while the upper and lower bounds
           show the 90th and 10th percentile predictions.
         </p>
@@ -61,6 +83,10 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
             dataKey="name"
             className="text-xs"
             tick={{ fill: 'currentColor' }}
+            interval={30}
+            angle={-45}
+            textAnchor="end"
+            height={80}
           />
           <YAxis
             label={{ value: 'kWh', angle: -90, position: 'insideLeft' }}
@@ -87,7 +113,7 @@ export default function PredictionChart({ predictions }: PredictionChartProps) {
             dataKey="Median (50%)"
             stroke="#2563eb"
             strokeWidth={3}
-            dot={{ r: 4 }}
+            dot={false}
           />
           <Line
             type="monotone"

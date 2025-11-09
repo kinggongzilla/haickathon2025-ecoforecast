@@ -92,7 +92,15 @@ def building_data():
         
         return jsonify(result), 200
         
+    except ValueError as ve:
+        # Handle specific errors from make_prediction (e.g., no similar buildings found)
+        return jsonify({
+            'error': 'Data processing error',
+            'message': str(ve)
+        }), 404
+
     except Exception as e:
+        # Handle unexpected errors
         return jsonify({
             'error': 'Internal server error',
             'message': str(e)
@@ -100,4 +108,4 @@ def building_data():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)
